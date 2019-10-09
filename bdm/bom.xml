@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.9.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.DrugSubstance">
+            <fields>
+                <field type="STRING" length="500" name="internationalName" nullable="true" collection="false"/>
+                <field type="STRING" length="500" name="compendialName" nullable="true" collection="false"/>
+                <field type="STRING" length="500" name="iupacName" nullable="true" collection="false"/>
+                <field type="STRING" length="500" name="chemicalAbstractsService" nullable="true" collection="false"/>
+                <field type="STRING" length="500" name="otherName" nullable="true" collection="true"/>
+                <field type="STRING" length="500" name="companyLabCode" nullable="true" collection="true"/>
+                <field type="STRING" length="300" name="saltCode" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="solvateForm" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="solvateFormEquiv" nullable="true" collection="false"/>
+                <field type="STRING" length="300" name="marsNamming" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="smile" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="structuralFormula" nullable="true" collection="false"/>
+                <field type="STRING" length="300" name="molecularFormula" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="relativeMolecularMass" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="exactMolecularMass" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="saltFactorBaseRatio" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="physicalState" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="solubility25deg" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="solubility37deg" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="solubilityClass" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="ph" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="meltingPoint" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="dissociationPKA" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="partitionCoefficient" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="hygroscopicity" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="permeability" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="isomerism" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="specificOpticalRotation" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="opticalActivityDifferentWave" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="polymorphism" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="dissolution37deg" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="dissolutionIntrinsicDR" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="dissolutionFlowDR" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="kso" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="nsc" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="hha" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleRouteAdmin" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="rolePatientICHM7" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="rolePatientICHS9" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleDoseMaxDaily" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleDosingRegimen" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleDurationTreatment" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityOrigReagent" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityOrigIntermediate" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityOrigCarryOver" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityOrigSolvent" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityOrigCatalyst" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityOrigDegradation" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityFatePurge" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityFateCol1" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityFateCol2" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityFateConsumed" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleImpurityCtrlICHM7" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="roleImpurityCtrlInSilicoDerekNexus" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="roleImpurityCtrlInSilicoSarahNexus" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="roleImpurityCtrlInSilicoCaseUltra" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="roleImpurityCtrlAmesTest" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="roleImpurityCtrlMemorandum" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="roleImpurityCtrlPDE" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="roleImpurityCtrlMLimitDS" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="roleImpurityCtrlMLimitInCompound" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="campaignAnsSynthesis" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Manufacturer" fetchType="EAGER" name="manufacturers" nullable="true" collection="true"/>
+                <field type="TEXT" length="255" name="manufacturerProcess" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerNomenclature" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerSynthesis" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerProcessA2" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerProcessA4" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerProcessA5" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerProcessA6" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerProcessFinalSubstance" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerCtrlMaterial" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerCtrlMaterialSpecA1" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerCtrlMaterialSpecA3" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerCtrlCriticalStep" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerCtrlCriticalSpecsInter" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerCtrlCriticalStepInProcess" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerProcessValidation" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="manufacturerProcessDevelopment" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationElementalAnalysis" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationHighResolutionmass" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationUltravioletAbsoption" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationInfraredSpectrum" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationProtonNuclearMagneticReso" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationCarbonNuclearMagneticReso" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationMassSpectrum" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationXRayPowderDiffraction" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationXRaySingleChrystal" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="characElucidationDifferentialScanningCalorimetry" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="characElucidationThermogravimetrucAnalysis" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="characElucidationIsomerism" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="characElucidationPolymorphism" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="characImpurities" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="ctrlDrugSpecification" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="ctrlDrugAnalyticalProcedures" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="ctrlDrugValidationAnalyticalProcedures" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="ctrlDrugBatchAnalyse" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="ctrlDrugJustifControlStrategy" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="ctrlDrugJustifChanges" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="ctrlDrugCertificate" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="referenceStandardDrug" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="containerClosureImmediatePackaging" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="containerClosureSecondaryPackaging" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="containerClosureReferenceShelf" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="containerClosureTransportConditions" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="containerClosureShelfLife" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="containerClosureStorageInstruction" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="stabilitySummary" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="stabilityShelfLife" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="stabilityProtocolCommitment" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="stabilityTests" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="stabilityDiscussions" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="stabilityResultStandardConditions" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="stabilityResult" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="stabilityResultPhotostability" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="stabilityResultStressTesting" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="decision" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Manufacturer">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="address" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
