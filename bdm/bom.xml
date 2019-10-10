@@ -39,7 +39,7 @@
                 <field type="TEXT" length="255" name="kso" nullable="true" collection="false"/>
                 <field type="STRING" length="100" name="nsc" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="hha" nullable="true" collection="false"/>
-                <field type="STRING" length="100" name="roleRouteAdmin" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="roleRouteAdmin" nullable="true" collection="true"/>
                 <field type="STRING" length="100" name="rolePatientICHM7" nullable="true" collection="false"/>
                 <field type="STRING" length="100" name="rolePatientICHS9" nullable="true" collection="false"/>
                 <field type="STRING" length="100" name="roleDoseMaxDaily" nullable="true" collection="false"/>
@@ -64,6 +64,7 @@
                 <field type="STRING" length="255" name="roleImpurityCtrlPDE" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="roleImpurityCtrlMLimitDS" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="roleImpurityCtrlMLimitInCompound" nullable="true" collection="false"/>
+                <field type="STRING" length="50" name="roleNKC" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="campaignAnsSynthesis" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.Manufacturer" fetchType="EAGER" name="manufacturers" nullable="true" collection="true"/>
                 <field type="TEXT" length="255" name="manufacturerProcess" nullable="true" collection="false"/>
@@ -120,6 +121,18 @@
                 <field type="TEXT" length="255" name="stabilityResultPhotostability" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="stabilityResultStressTesting" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="decision" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="nvpNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="uipack" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="stepId" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="orderNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="projectCode" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="campaign" nullable="true" collection="false"/>
+                <field type="STRING" length="200" name="projectLeader" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="eln" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="sap" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="cb" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="others" nullable="true" collection="false"/>
+                <field type="STRING" length="100" name="classe" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
