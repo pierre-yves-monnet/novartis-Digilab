@@ -18,7 +18,7 @@
                 <field type="STRING" length="300" name="molecularFormula" nullable="true" collection="false"/>
                 <field type="DOUBLE" length="255" name="relativeMolecularMass" nullable="true" collection="false"/>
                 <field type="DOUBLE" length="255" name="exactMolecularMass" nullable="true" collection="false"/>
-                <field type="DOUBLE" length="255" name="saltFactorBaseRatio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="saltFactorBaseRatio" nullable="true" collection="false"/>
                 <field type="STRING" length="100" name="physicalState" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="solubility25deg" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="solubility37deg" nullable="true" collection="false"/>
@@ -133,6 +133,10 @@
                 <field type="TEXT" length="255" name="cb" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="others" nullable="true" collection="false"/>
                 <field type="STRING" length="100" name="classe" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="pdeExplanation" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="tracability" nullable="true" collection="false"/>
+                <field type="STRING" length="20" name="studyNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="50" name="status" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

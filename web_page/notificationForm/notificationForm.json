@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.45",
   "id" : "notificationForm",
   "name" : "notificationForm",
-  "lastUpdate" : 1570747278445,
+  "lastUpdate" : 1570839231214,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -490,7 +490,7 @@
             },
             "type" : {
               "type" : "constant",
-              "value" : "number"
+              "value" : "text"
             },
             "min" : {
               "type" : "constant"
@@ -623,7 +623,7 @@
             },
             "availableValues" : {
               "type" : "constant",
-              "value" : [ "green", "red", "blue" ]
+              "value" : [ "oral", "parenteral", "inhalation", "ocular", "dermal", "other" ]
             },
             "displayedKey" : {
               "type" : "constant"
@@ -727,6 +727,121 @@
               "value" : ""
             },
             "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Default label"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "allowHTML" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "text" : {
+              "type" : "interpolation",
+              "value" : "<b>ChemDraw file</b>"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            }
+          },
+          "reference" : "d558b8ee-6f92-4950-ba38-eb8f85318ff1",
+          "hasValidationError" : false,
+          "id" : "pbText"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 6,
+            "lg" : 6
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "text" : {
+              "type" : "interpolation",
+              "value" : "{{formInput.chemDrawing.src.contentFileName}}"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "URL"
+            },
+            "targetUrl" : {
+              "type" : "expression",
+              "value" : "'/bonita/portal/'+formInput.chemDrawing.src.url"
+            },
+            "pageToken" : {
+              "type" : "constant"
+            },
+            "processName" : {
+              "type" : "constant"
+            },
+            "processVersion" : {
+              "type" : "constant"
+            },
+            "taskId" : {
+              "type" : "constant"
+            },
+            "caseId" : {
+              "type" : "constant"
+            },
+            "target" : {
+              "type" : "constant",
+              "value" : "_self"
+            },
+            "appToken" : {
+              "type" : "constant"
+            },
+            "urlParams" : {
+              "type" : "constant"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            },
+            "buttonStyle" : {
+              "type" : "constant",
+              "value" : "link"
+            }
+          },
+          "reference" : "741ba794-ff99-4ce0-b846-800e2f7bb592",
+          "hasValidationError" : false,
+          "id" : "pbLink"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 6,
+            "lg" : 6
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
               "type" : "expression",
               "value" : "formControl.readonly.projectLead"
             },
@@ -736,11 +851,11 @@
             },
             "labelHidden" : {
               "type" : "constant",
-              "value" : false
+              "value" : true
             },
             "label" : {
               "type" : "interpolation",
-              "value" : "ChemDraw file"
+              "value" : "Upload"
             },
             "labelPosition" : {
               "type" : "constant",
@@ -2217,8 +2332,8 @@
           "dimension" : {
             "xs" : 12,
             "sm" : 12,
-            "md" : 12,
-            "lg" : 12
+            "md" : 4,
+            "lg" : 6
           },
           "propertyValues" : {
             "cssClasses" : {
@@ -2259,7 +2374,7 @@
             },
             "availableValues" : {
               "type" : "constant",
-              "value" : [ "Class 1", "Class 2", "Class 3" ]
+              "value" : [ "1", "2", "3", "4", "5", "5-PDE" ]
             },
             "displayedKey" : {
               "type" : "constant"
@@ -2275,7 +2390,187 @@
           "reference" : "363fa082-77ca-4db0-b4dd-def1aa393aef",
           "hasValidationError" : false,
           "id" : "pbSelect"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 8,
+            "lg" : 6
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "expression",
+              "value" : "formInput.drugSubstance.classe !== '5-PDE'"
+            },
+            "readOnly" : {
+              "type" : "expression",
+              "value" : "formControl.readonly.PCS"
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "5-PDE Explanation"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formInput.drugSubstance.pdeExplanation"
+            }
+          },
+          "reference" : "7588ca72-15ee-42d2-9b20-0d1cc2b55550",
+          "hasValidationError" : false,
+          "id" : "pbTextarea"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 12,
+            "lg" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : 20
+            },
+            "readOnly" : {
+              "type" : "expression",
+              "value" : "formControl.readonly.PCS"
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Study Number"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "formInput.drugSubstrance.studyNumber"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "text"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            },
+            "step" : {
+              "type" : "constant",
+              "value" : 1
+            }
+          },
+          "reference" : "450eab6d-61df-4868-8aac-fc4379441ee5",
+          "hasValidationError" : false,
+          "id" : "pbInput"
         } ] ]
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<h5>Tracability</h5>\n{{formInput.drugSubstance.tracability}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "187f72e7-087d-4e76-b77e-f6245eee5d73",
+        "hasValidationError" : false,
+        "id" : "pbText"
       } ], [ {
         "type" : "component",
         "dimension" : {
@@ -2611,7 +2906,7 @@
     },
     "formOutput" : {
       "type" : "expression",
-      "value" : "if( $data.formInput ){\n\t//map drugSubstance variable to expected task contract input\n\tvar formOutput={\n\t\tdrugSubstanceInput: $data.formInput.drugSubstance\n\t};\n\tif ($data.formInput.chemDrawingDocumentInput)\n\t    formOutput.chemDrawingDocumentInput = $data.formInput.chemDrawingDocumentInput;\n\telse\n\t    formOutput.chemDrawingDocumentInput=null;\n    return formOutput;\n\t\n}\nreturn  {}",
+      "value" : "if( $data.formInput ){\n\t//map drugSubstance variable to expected task contract input\n\tvar formOutput={\n\t\tdrugSubstanceInput: $data.formInput.drugSubstance\n\t};\n\tif ($data.formInput.chemDrawingDocumentInput)\n\t    formOutput.chemDrawingDocumentInput = $data.formInput.chemDrawingDocumentInput;\n\telse\n\t    formOutput.chemDrawingDocumentInput=null;\n\t    \n\t// thanks default Bonita Widget to not be able to set the value to null!\n\t\n\tif (! formOutput.drugSubstanceInput.saltCode)\n\t    formOutput.drugSubstanceInput.saltCode=null;\n\tif (! formOutput.drugSubstanceInput.saltFactorBaseRatio)\n\t    formOutput.drugSubstanceInput.saltFactorBaseRatio=null;\n\tif (! formOutput.drugSubstanceInput.roleRouteAdmin)\n\t    formOutput.drugSubstanceInput.roleRouteAdmin=null;\n\tif (! formOutput.drugSubstanceInput.projectCode)\n\t    formOutput.drugSubstanceInput.projectCode=null;\n\tif (! formOutput.drugSubstanceInput.campaign)\n\t    formOutput.drugSubstanceInput.campaign=null;\n\tif (! formOutput.drugSubstanceInput.projectLeader)\n\t    formOutput.drugSubstanceInput.projectLeader=null;\n\tif (! formOutput.drugSubstanceInput.eln)\n\t    formOutput.drugSubstanceInput.eln=null;\n\tif (! formOutput.drugSubstanceInput.sap)\n\t    formOutput.drugSubstanceInput.sap=null;\n\tif (! formOutput.drugSubstanceInput.cb)\n\t    formOutput.drugSubstanceInput.cb=null;\n\tif (! formOutput.drugSubstanceInput.roleDoseMaxDaily)\n\t    formOutput.drugSubstanceInput.roleDoseMaxDaily=null;\n\t    \n    return formOutput;\n\t\n}\nreturn  {}",
       "exposed" : false
     },
     "context" : {

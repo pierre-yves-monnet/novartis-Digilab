@@ -104,6 +104,28 @@
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_favsMOyHEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_favsMeyHEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_f2soYOyHEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_favsMuyHEemmR5XgohPe2w" name="Designed" content="Designed"/>
+            <operator xmi:type="expression:Operator" xmi:id="_favsM-yHEemmR5XgohPe2w" type="JAVA_METHOD" expression="setStatus">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_dqgsYOyBEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dqgsYeyBEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eLoccOyBEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dqgsYuyBEemmR5XgohPe2w" name="Update Tracability " content="import java.text.SimpleDateFormat&#xD;&#xA;&#xD;&#xA;import org.bonitasoft.engine.identity.User&#xD;&#xA;&#xD;&#xA;User user = apiAccessor.getIdentityAPI().getUser( taskAssigneeId );&#xD;&#xA;SimpleDateFormat sdf = new SimpleDateFormat(&quot;dd/mm/yyyy HH:MM&quot;);&#xD;&#xA;return drugSubstance.tracability +&quot;&lt;br>&quot;+ &quot;Design Phase done by &quot;+user.getUserName()+ &quot; on &quot;+sdf.format( new Date() );&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_9jhFUOyBEemmR5XgohPe2w" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_9jhFUeyBEemmR5XgohPe2w" name="taskAssigneeId" content="taskAssigneeId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9jhFUuyBEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_dqgsY-yBEemmR5XgohPe2w" type="JAVA_METHOD" expression="setTracability">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_4MG64eujEemO_cOXnSsapA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_4MG64uujEemO_cOXnSsapA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_4MG64-ujEemO_cOXnSsapA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -132,6 +154,28 @@
           <data xmi:type="process:Data" xmi:id="_DxZQ0OumEemO_cOXnSsapA" name="formCode" dataType="_4MHiHOujEemO_cOXnSsapA">
             <defaultValue xmi:type="expression:Expression" xmi:id="_DxZQ0eumEemO_cOXnSsapA" name="GMP" content="GMP"/>
           </data>
+          <operations xmi:type="expression:Operation" xmi:id="_m54XQOyHEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_m54XQeyHEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_niXTkOyHEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_m54XQuyHEemmR5XgohPe2w" name="Registered for GMP" content="Registered for GMP"/>
+            <operator xmi:type="expression:Operator" xmi:id="_m54XQ-yHEemmR5XgohPe2w" type="JAVA_METHOD" expression="setStatus">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_DH7wIOyCEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_DH7wIeyCEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Dk8cQOyCEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_DH7wIuyCEemmR5XgohPe2w" name="tracability" content="import java.text.SimpleDateFormat&#xD;&#xA;&#xD;&#xA;import org.bonitasoft.engine.identity.User&#xD;&#xA;&#xD;&#xA;User user = apiAccessor.getIdentityAPI().getUser( taskAssigneeId );&#xD;&#xA;SimpleDateFormat sdf = new SimpleDateFormat(&quot;dd/mm/yyyy HH:MM&quot;);&#xD;&#xA;return drugSubstance.tracability +&quot;&lt;br>&quot;+ &quot;Registration done by &quot;+user.getUserName()+ &quot; on &quot;+sdf.format( new Date() );&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_FyKhwOyCEemmR5XgohPe2w" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FyKhweyCEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_FyKhwuyCEemmR5XgohPe2w" name="taskAssigneeId" content="taskAssigneeId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_DH7wI-yCEemmR5XgohPe2w" type="JAVA_METHOD" expression="setTracability">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_4MG69uujEemO_cOXnSsapA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_4MG69-ujEemO_cOXnSsapA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_4MG6-OujEemO_cOXnSsapA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -161,6 +205,28 @@
               <referencedElements xmi:type="process:ContractInput" xmi:id="_4MG7C-ujEemO_cOXnSsapA" name="drugSubstanceInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_4MG7DOujEemO_cOXnSsapA" type="JAVA_METHOD" expression="setRoleNKC">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_jI_fkOyHEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_jI_fkeyHEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jf6KwOyHEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_jI_fkuyHEemmR5XgohPe2w" name="Nomenclatured" content="Nomenclatured"/>
+            <operator xmi:type="expression:Operator" xmi:id="_jI_fk-yHEemmR5XgohPe2w" type="JAVA_METHOD" expression="setStatus">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_-ksOcOyBEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_-ksOceyBEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="__GPcUOyBEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_-ksOcuyBEemmR5XgohPe2w" name="Update" content="import java.text.SimpleDateFormat&#xD;&#xA;&#xD;&#xA;import org.bonitasoft.engine.identity.User&#xD;&#xA;&#xD;&#xA;User user = apiAccessor.getIdentityAPI().getUser( taskAssigneeId );&#xD;&#xA;SimpleDateFormat sdf = new SimpleDateFormat(&quot;dd/mm/yyyy HH:MM&quot;);&#xD;&#xA;return drugSubstance.tracability +&quot;&lt;br>&quot;+ &quot;Nomenclature done by &quot;+user.getUserName()+ &quot; on &quot;+sdf.format( new Date() );&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Cd-NIOyCEemmR5XgohPe2w" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Cd-NIeyCEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Cd-NIuyCEemmR5XgohPe2w" name="taskAssigneeId" content="taskAssigneeId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_-ksOc-yBEemmR5XgohPe2w" type="JAVA_METHOD" expression="setTracability">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -275,6 +341,50 @@
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_cPjC4OyEEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_cPjC4eyEEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ct5LwOyEEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_cPjC4uyEEemmR5XgohPe2w" name="studyNumber" content="return drugSubstanceInput?.studyNumber" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_kFJGIOyEEemmR5XgohPe2w" name="drugSubstanceInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_cPjC4-yEEemmR5XgohPe2w" type="JAVA_METHOD" expression="setStudyNumber">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_9cCc8OyEEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_9cCc8eyEEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-NOCQOyEEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_9cCc8uyEEemmR5XgohPe2w" name="pdeExplanation" content="return drugSubstanceInput?.pdeExplanation" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_GUrRkOyFEemmR5XgohPe2w" name="drugSubstanceInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_9cCc8-yEEemmR5XgohPe2w" type="JAVA_METHOD" expression="setPdeExplanation">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_viaTUOyHEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_viaTUeyHEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wBsQUOyHEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_viaTUuyHEemmR5XgohPe2w" name="Validate" content="Validate"/>
+            <operator xmi:type="expression:Operator" xmi:id="_viaTU-yHEemmR5XgohPe2w" type="JAVA_METHOD" expression="setStatus">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_GuDiQOyCEemmR5XgohPe2w">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_GuDiQeyCEemmR5XgohPe2w" name="drugSubstance" content="drugSubstance" type="TYPE_VARIABLE" returnType="com.company.model.DrugSubstance">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_HnJGYOyCEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_GuDiQuyCEemmR5XgohPe2w" name="Tracability" content="import java.text.SimpleDateFormat&#xD;&#xA;&#xD;&#xA;import org.bonitasoft.engine.identity.User&#xD;&#xA;&#xD;&#xA;User user = apiAccessor.getIdentityAPI().getUser( taskAssigneeId );&#xD;&#xA;SimpleDateFormat sdf = new SimpleDateFormat(&quot;dd/mm/yyyy HH:MM&quot;);&#xD;&#xA;return drugSubstance.tracability +&quot;&lt;br>&quot;+ &quot;Decision done by &quot;+user.getUserName()+ &quot; on &quot;+sdf.format( new Date() );&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Jk3XUOyCEemmR5XgohPe2w" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Jk3XUeyCEemmR5XgohPe2w" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Jk3-YOyCEemmR5XgohPe2w" name="taskAssigneeId" content="taskAssigneeId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_GuDiQ-yCEemmR5XgohPe2w" type="JAVA_METHOD" expression="setTracability">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_4MHhs-ujEemO_cOXnSsapA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_4MHhtOujEemO_cOXnSsapA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_4MHhteujEemO_cOXnSsapA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -315,8 +425,10 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_4MHhyuujEemO_cOXnSsapA" name="drugSubstance" dataType="_4MHiH-ujEemO_cOXnSsapA" className="com.company.model.DrugSubstance">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_4MHhy-ujEemO_cOXnSsapA" name="initDrugSubstance()" content="def drugSubstanceVar = new com.company.model.DrugSubstance()&#xD;&#xA;drugSubstanceVar.saltCode = drugSubstanceInput?.saltCode&#xD;&#xA;drugSubstanceVar.saltFactorBaseRatio = drugSubstanceInput?.saltFactorBaseRatio&#xD;&#xA;drugSubstanceVar.roleRouteAdmin = drugSubstanceInput?.roleRouteAdmin&#xD;&#xA;drugSubstanceVar.projectCode = drugSubstanceInput?.projectCode&#xD;&#xA;drugSubstanceVar.campaign = drugSubstanceInput?.campaign&#xD;&#xA;drugSubstanceVar.projectLeader = drugSubstanceInput?.projectLeader&#xD;&#xA;drugSubstanceVar.eln = drugSubstanceInput?.eln&#xD;&#xA;drugSubstanceVar.sap = drugSubstanceInput?.sap&#xD;&#xA;drugSubstanceVar.cb = drugSubstanceInput?.cb&#xD;&#xA;drugSubstanceVar.roleDoseMaxDaily = drugSubstanceInput?.roleDoseMaxDaily&#xD;&#xA;&#xD;&#xA;return drugSubstanceVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.DrugSubstance">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_4MHhzOujEemO_cOXnSsapA" name="drugSubstanceInput" type="COMPLEX"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_4MHhy-ujEemO_cOXnSsapA" name="initDrugSubstance()" content="import java.text.SimpleDateFormat&#xD;&#xA;&#xD;&#xA;import org.bonitasoft.engine.bpm.process.ProcessInstance&#xD;&#xA;import org.bonitasoft.engine.identity.User&#xD;&#xA;&#xD;&#xA;def drugSubstanceVar = new com.company.model.DrugSubstance()&#xD;&#xA;drugSubstanceVar.saltCode = drugSubstanceInput?.saltCode&#xD;&#xA;drugSubstanceVar.saltFactorBaseRatio = drugSubstanceInput?.saltFactorBaseRatio&#xD;&#xA;drugSubstanceVar.roleRouteAdmin = drugSubstanceInput?.roleRouteAdmin&#xD;&#xA;drugSubstanceVar.projectCode = drugSubstanceInput?.projectCode&#xD;&#xA;drugSubstanceVar.campaign = drugSubstanceInput?.campaign&#xD;&#xA;drugSubstanceVar.projectLeader = drugSubstanceInput?.projectLeader&#xD;&#xA;drugSubstanceVar.eln = drugSubstanceInput?.eln&#xD;&#xA;drugSubstanceVar.sap = drugSubstanceInput?.sap&#xD;&#xA;drugSubstanceVar.cb = drugSubstanceInput?.cb&#xD;&#xA;drugSubstanceVar.roleDoseMaxDaily = drugSubstanceInput?.roleDoseMaxDaily&#xD;&#xA;drugSubstanceVar.status=&quot;Created&quot;;&#xD;&#xA;&#xD;&#xA;ProcessInstance processInstance= apiAccessor.getProcessAPI().getProcessInstance( processInstanceId);&#xD;&#xA;User user = apiAccessor.getIdentityAPI().getUser( processInstance.getStartedBy() );&#xD;&#xA;SimpleDateFormat sdf = new SimpleDateFormat(&quot;dd/mm/yyyy HH:MM&quot;);&#xD;&#xA;&#xD;&#xA;drugSubstanceVar.tracability= &quot;Created by &quot;+user.getUserName()+ &quot; on &quot;+sdf.format( new Date() );&#xD;&#xA;&#xD;&#xA;return drugSubstanceVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.DrugSubstance">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_b-OJsOyBEemmR5XgohPe2w" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_b-OJseyBEemmR5XgohPe2w" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="com.bonitasoft.engine.api.APIAccessor"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_b-OwwOyBEemmR5XgohPe2w" name="drugSubstanceInput" type="COMPLEX"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_4MHhzeujEemO_cOXnSsapA">
@@ -371,7 +483,7 @@
       <contract xmi:type="process:Contract" xmi:id="_4MHh8uujEemO_cOXnSsapA">
         <inputs xmi:type="process:ContractInput" xmi:id="_4MHh8-ujEemO_cOXnSsapA" name="drugSubstanceInput" type="COMPLEX" dataReference="drugSubstance">
           <inputs xmi:type="process:ContractInput" xmi:id="_4MHh9OujEemO_cOXnSsapA" name="saltCode"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_4MHh9eujEemO_cOXnSsapA" name="saltFactorBaseRatio" type="DECIMAL"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_4MHh9eujEemO_cOXnSsapA" name="saltFactorBaseRatio"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_4MHh9uujEemO_cOXnSsapA" name="roleRouteAdmin" multiple="true"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_4MHh9-ujEemO_cOXnSsapA" name="projectCode"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_4MHh-OujEemO_cOXnSsapA" name="campaign"/>
