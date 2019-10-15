@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.45",
   "id" : "notificationForm",
   "name" : "notificationForm",
-  "lastUpdate" : 1570839231214,
+  "lastUpdate" : 1571131660988,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -249,7 +249,7 @@
             },
             "labelPosition" : {
               "type" : "constant",
-              "value" : "top"
+              "value" : "left"
             },
             "labelWidth" : {
               "type" : "constant",
@@ -324,7 +324,7 @@
             },
             "labelPosition" : {
               "type" : "constant",
-              "value" : "top"
+              "value" : "left"
             },
             "labelWidth" : {
               "type" : "constant",
@@ -399,7 +399,7 @@
             },
             "labelPosition" : {
               "type" : "constant",
-              "value" : "top"
+              "value" : "left"
             },
             "labelWidth" : {
               "type" : "constant",
@@ -474,7 +474,7 @@
             },
             "labelPosition" : {
               "type" : "constant",
-              "value" : "top"
+              "value" : "left"
             },
             "labelWidth" : {
               "type" : "constant",
@@ -549,7 +549,7 @@
             },
             "labelPosition" : {
               "type" : "constant",
-              "value" : "top"
+              "value" : "left"
             },
             "labelWidth" : {
               "type" : "constant",
@@ -615,7 +615,7 @@
             },
             "labelPosition" : {
               "type" : "constant",
-              "value" : "top"
+              "value" : "left"
             },
             "labelWidth" : {
               "type" : "constant",
@@ -682,7 +682,7 @@
             },
             "labelPosition" : {
               "type" : "constant",
-              "value" : "top"
+              "value" : "left"
             },
             "labelWidth" : {
               "type" : "constant",
@@ -1116,7 +1116,7 @@
             },
             "text" : {
               "type" : "interpolation",
-              "value" : "Chemist part"
+              "value" : "Chemist"
             },
             "label" : {
               "type" : "interpolation"
@@ -1215,7 +1215,7 @@
               },
               "labelWidth" : {
                 "type" : "constant",
-                "value" : 1
+                "value" : 4
               },
               "label" : {
                 "type" : "interpolation",
@@ -1235,7 +1235,7 @@
               },
               "labelPosition" : {
                 "type" : "constant",
-                "value" : "top"
+                "value" : "left"
               },
               "placeholder" : {
                 "type" : "constant"
@@ -1305,7 +1305,7 @@
               },
               "labelWidth" : {
                 "type" : "constant",
-                "value" : 1
+                "value" : 4
               },
               "label" : {
                 "type" : "interpolation",
@@ -1325,7 +1325,7 @@
               },
               "labelPosition" : {
                 "type" : "constant",
-                "value" : "top"
+                "value" : "left"
               },
               "placeholder" : {
                 "type" : "constant"
@@ -1395,7 +1395,7 @@
               },
               "labelWidth" : {
                 "type" : "constant",
-                "value" : 1
+                "value" : 4
               },
               "label" : {
                 "type" : "interpolation",
@@ -1415,7 +1415,7 @@
               },
               "labelPosition" : {
                 "type" : "constant",
-                "value" : "top"
+                "value" : "left"
               },
               "placeholder" : {
                 "type" : "constant"
@@ -1485,11 +1485,11 @@
               },
               "labelWidth" : {
                 "type" : "constant",
-                "value" : 1
+                "value" : 4
               },
               "label" : {
                 "type" : "interpolation",
-                "value" : "UIPAC Number"
+                "value" : "IUPAC Number"
               },
               "type" : {
                 "type" : "constant",
@@ -1505,7 +1505,7 @@
               },
               "labelPosition" : {
                 "type" : "constant",
-                "value" : "top"
+                "value" : "left"
               },
               "placeholder" : {
                 "type" : "constant"
@@ -1575,7 +1575,7 @@
               },
               "labelWidth" : {
                 "type" : "constant",
-                "value" : 1
+                "value" : 4
               },
               "label" : {
                 "type" : "interpolation",
@@ -1595,7 +1595,7 @@
               },
               "labelPosition" : {
                 "type" : "constant",
-                "value" : "top"
+                "value" : "left"
               },
               "placeholder" : {
                 "type" : "constant"
@@ -1665,7 +1665,7 @@
               },
               "labelWidth" : {
                 "type" : "constant",
-                "value" : 1
+                "value" : 4
               },
               "label" : {
                 "type" : "interpolation",
@@ -1685,7 +1685,7 @@
               },
               "labelPosition" : {
                 "type" : "constant",
-                "value" : "top"
+                "value" : "left"
               },
               "placeholder" : {
                 "type" : "constant"
@@ -1771,7 +1771,7 @@
               },
               "labelPosition" : {
                 "type" : "constant",
-                "value" : "top"
+                "value" : "left"
               },
               "labelWidth" : {
                 "type" : "constant",
@@ -1897,7 +1897,7 @@
             },
             "labelPosition" : {
               "type" : "constant",
-              "value" : "top"
+              "value" : "left"
             },
             "labelWidth" : {
               "type" : "constant",
@@ -2358,7 +2358,7 @@
             },
             "label" : {
               "type" : "interpolation",
-              "value" : "Classe"
+              "value" : "Class"
             },
             "labelPosition" : {
               "type" : "constant",
@@ -2490,7 +2490,7 @@
             },
             "labelPosition" : {
               "type" : "constant",
-              "value" : "top"
+              "value" : "left"
             },
             "labelWidth" : {
               "type" : "constant",
@@ -2561,7 +2561,7 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "<h5>Tracability</h5>\n{{formInput.drugSubstance.tracability}}"
+            "value" : "<h5>Audit trace</h5>\n{{formInput.drugSubstance.tracability}}"
           },
           "alignment" : {
             "type" : "constant",
