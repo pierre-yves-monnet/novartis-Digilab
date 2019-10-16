@@ -1,0 +1,124 @@
+{
+  "designerVersion" : "1.9.45",
+  "id" : "Notification",
+  "name" : "Notification",
+  "lastUpdate" : 1570840016936,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "bg-primary"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Notifications"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 2"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "4916c848-8e1a-4a98-b8fd-a2c908086f13",
+    "hasValidationError" : false,
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "Project code", "Campaign", "NVP number", "IUPAC number", "Status", "Next Step" ]
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Bonita API"
+      },
+      "apiUrl" : {
+        "type" : "constant",
+        "value" : "../API/bdm/businessData/com.company.model.DrugSubstance?q=find&p=0&c=1000"
+      },
+      "params" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "content" : {
+        "type" : "constant"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "projectCode", "campaign", "nvpNumber", "uipack", "status" ]
+      },
+      "sortColumns" : {
+        "type" : "constant",
+        "value" : [ "projectCode", "campaign", "nvpNumber", "uipack", "status" ]
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "pageSize" : {
+        "type" : "constant",
+        "value" : 10
+      },
+      "filter" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "0f292c17-d99c-48f5-85b5-aafa070c2616",
+    "hasValidationError" : false,
+    "id" : "pbDataTable"
+  } ] ],
+  "assets" : [ {
+    "id" : "ff010e10-1307-4d24-918e-763c8664d08e",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "6abebcf8-0c72-4f22-bc92-48e074627764",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "drugSubstance" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.DrugSubstance?q=find&p=0&c=1000",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "f3ada10b-b45a-46df-beb3-a1d0a631748c",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}
