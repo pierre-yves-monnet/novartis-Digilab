@@ -532,6 +532,100 @@
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RxdcJ-8xEemsnpWiSUg7yQ" id="GROOVY_SCRIPT"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_RxdcKO8xEemsnpWiSUg7yQ" id="OTHER"/>
       </configurations>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_BEaTEPC9EemyQ7wV-K1kSQ" name="bonitaLocal" version="7.9.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_BEd9cPC9EemyQ7wV-K1kSQ">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_BEd9cfC9EemyQ7wV-K1kSQ" name="Project lead">
+            <groups xmi:type="actormapping:Groups" xmi:id="_BEd9cvC9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_BEd9c_C9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_BEd9dPC9EemyQ7wV-K1kSQ">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_BEd9dfC9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_BEd9dvC9EemyQ7wV-K1kSQ" name="Chemist">
+            <groups xmi:type="actormapping:Groups" xmi:id="_BEd9d_C9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_BEd9ePC9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_BEd9efC9EemyQ7wV-K1kSQ">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_BEd9evC9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_BEd9e_C9EemyQ7wV-K1kSQ" name="NKC">
+            <groups xmi:type="actormapping:Groups" xmi:id="_BEd9fPC9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_BEd9ffC9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_BEd9fvC9EemyQ7wV-K1kSQ">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_BEd9f_C9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_BEd9gPC9EemyQ7wV-K1kSQ" name="PCS">
+            <groups xmi:type="actormapping:Groups" xmi:id="_BEd9gfC9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_BEd9gvC9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_BEd9g_C9EemyQ7wV-K1kSQ">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_BEd9hPC9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_BEd9hfC9EemyQ7wV-K1kSQ" name="QA">
+            <groups xmi:type="actormapping:Groups" xmi:id="_BEd9hvC9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_BEd9h_C9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_BEd9iPC9EemyQ7wV-K1kSQ">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_BEd9ifC9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_BEaTEfC9EemyQ7wV-K1kSQ" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_BEaTEvC9EemyQ7wV-K1kSQ" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_BEaTE_C9EemyQ7wV-K1kSQ" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_BEaTFPC9EemyQ7wV-K1kSQ" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_BEaTFfC9EemyQ7wV-K1kSQ" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_BEaTFvC9EemyQ7wV-K1kSQ" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_BEaTF_C9EemyQ7wV-K1kSQ" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_BEaTGPC9EemyQ7wV-K1kSQ" id="OTHER"/>
+      </configurations>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_EXIoEPC9EemyQ7wV-K1kSQ" name="Qualification" version="7.9.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_EXIoGfC9EemyQ7wV-K1kSQ">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_EXIoGvC9EemyQ7wV-K1kSQ" name="Project lead">
+            <groups xmi:type="actormapping:Groups" xmi:id="_EXIoG_C9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_EXIoHPC9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_EXIoHfC9EemyQ7wV-K1kSQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_EXIoHvC9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_EXIoH_C9EemyQ7wV-K1kSQ" name="Chemist">
+            <groups xmi:type="actormapping:Groups" xmi:id="_EXIoIPC9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_EXIoIfC9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_EXIoIvC9EemyQ7wV-K1kSQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_EXIoI_C9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_EXIoJPC9EemyQ7wV-K1kSQ" name="NKC">
+            <groups xmi:type="actormapping:Groups" xmi:id="_EXIoJfC9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_EXIoJvC9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_EXIoJ_C9EemyQ7wV-K1kSQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_EXIoKPC9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_EXIoKfC9EemyQ7wV-K1kSQ" name="PCS">
+            <groups xmi:type="actormapping:Groups" xmi:id="_EXIoKvC9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_EXIoK_C9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_EXIoLPC9EemyQ7wV-K1kSQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_EXIoLfC9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_EXIoLvC9EemyQ7wV-K1kSQ" name="QA">
+            <groups xmi:type="actormapping:Groups" xmi:id="_EXIoL_C9EemyQ7wV-K1kSQ"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_EXIoMPC9EemyQ7wV-K1kSQ"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_EXIoMfC9EemyQ7wV-K1kSQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_EXIoMvC9EemyQ7wV-K1kSQ"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_EXIoEfC9EemyQ7wV-K1kSQ" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_EXIoEvC9EemyQ7wV-K1kSQ" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_EXIoE_C9EemyQ7wV-K1kSQ" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_EXIoFPC9EemyQ7wV-K1kSQ" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_EXIoFfC9EemyQ7wV-K1kSQ" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_EXIoFvC9EemyQ7wV-K1kSQ" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_EXIoF_C9EemyQ7wV-K1kSQ" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_EXIoGPC9EemyQ7wV-K1kSQ" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_4MHh8uujEemO_cOXnSsapA">
         <inputs xmi:type="process:ContractInput" xmi:id="_4MHh8-ujEemO_cOXnSsapA" name="drugSubstanceInput" type="COMPLEX" dataReference="drugSubstance">
           <inputs xmi:type="process:ContractInput" xmi:id="_4MHh9OujEemO_cOXnSsapA" name="saltCode"/>
