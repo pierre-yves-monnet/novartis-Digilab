@@ -11,10 +11,7 @@ node('bcd-790') {
     // set to true/false to switch verbose mode
     def debugMode = params.debug ?:	false;
     
-    // set to true/false to enable required event handler activation state
-    // uses a tuned BCD version until BCD OOB support
-    def bonita_enable_acm_handler = true
-    def applicationToken = 'cases'
+    def applicationToken = 'notification'
     // start settings
     // not supposed to be modified
 	
@@ -26,7 +23,11 @@ node('bcd-790') {
     
     // bcd_stack_id overrides scenario value
     // unsupported chars must be replaced
-    def stackName = "${gitRepoName.toLowerCase()}_${env.BRANCH_NAME.toLowerCase()}" 
+    
+    // deploy on same stack
+    //def stackName = "${gitRepoName.toLowerCase()}_${env.BRANCH_NAME.toLowerCase()}" 
+    def stackName = "${gitRepoName.toLowerCase()}" 
+    
     String[ ] excludedChars= [ '-', '\\.', '\\/' ]
     excludedChars.each{ excluded ->
         stackName = stackName.replaceAll(excluded,'_')
