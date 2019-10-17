@@ -48,7 +48,6 @@ node('bcd-790') {
             checkout scm
             echo "jobBaseName: $jobBaseName"
             echo "gitRepoName: $gitRepoName"
-            stash name: 'tests', includes: 'tests/**'
         }
         
         stage("Build LAs") {
@@ -80,7 +79,7 @@ node('bcd-790') {
         }
 
         stage('Archive') {
-            archiveArtifacts artifacts: "target/*.zip, target/*.bconf, target/*.xml, target/*.bar, target/*.bos", fingerprint: true
+            archiveArtifacts artifacts: "target/*.zip, target/*.bconf", fingerprint: true
         }
   	} // timestamps
   } // ansiColor
