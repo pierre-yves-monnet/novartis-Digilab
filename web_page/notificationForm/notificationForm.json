@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.45",
   "id" : "notificationForm",
   "name" : "notificationForm",
-  "lastUpdate" : 1571131660988,
+  "lastUpdate" : 1571383878327,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -1189,6 +1189,69 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [ [ {
+            "type" : "container",
+            "dimension" : {
+              "xs" : 12,
+              "sm" : 12,
+              "md" : 2,
+              "lg" : 6
+            },
+            "propertyValues" : {
+              "cssClasses" : {
+                "type" : "constant",
+                "value" : ""
+              },
+              "hidden" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "repeatedCollection" : {
+                "type" : "variable",
+                "value" : ""
+              }
+            },
+            "reference" : "1cb16813-7933-4bb0-a66b-4f81a312b5d8",
+            "hasValidationError" : false,
+            "id" : "pbContainer",
+            "rows" : [ [ ] ]
+          }, {
+            "type" : "component",
+            "dimension" : {
+              "xs" : 12,
+              "sm" : 12,
+              "md" : 8,
+              "lg" : 6
+            },
+            "propertyValues" : {
+              "cssClasses" : {
+                "type" : "constant",
+                "value" : "document-iframe"
+              },
+              "hidden" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "type" : {
+                "type" : "constant",
+                "value" : "Process document"
+              },
+              "url" : {
+                "type" : "expression",
+                "value" : "context.chemDrawing_ref"
+              },
+              "document" : {
+                "type" : "variable",
+                "value" : "context.chemDrawing_ref"
+              },
+              "showPreview" : {
+                "type" : "constant",
+                "value" : true
+              }
+            },
+            "reference" : "aebe332e-d586-40f6-9332-1430c6ccfe9a",
+            "hasValidationError" : false,
+            "id" : "pbFileViewer"
+          } ], [ {
             "type" : "component",
             "dimension" : {
               "md" : 12,
@@ -2889,6 +2952,12 @@
     "name" : "localization.json",
     "type" : "json",
     "order" : 0,
+    "external" : false
+  }, {
+    "id" : "ba6fe753-9c07-412b-933a-58f2fd182ea2",
+    "name" : "test.pdf",
+    "type" : "img",
+    "order" : 1,
     "external" : false
   }, {
     "id" : "cc17e617-4bdf-4bfd-b355-1218e292424c",

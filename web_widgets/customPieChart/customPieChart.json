@@ -1,0 +1,49 @@
+{
+  "designerVersion" : "1.2.9",
+  "id" : "customPieChart",
+  "name" : "pieChart",
+  "lastUpdate" : 1571383363190,
+  "template" : "<canvas id=\"pie\" class=\"chart chart-pie\" data=\"data\" labels=\"labels\" legend=\"true\"></canvas>",
+  "controller" : "function ($scope) {\n\n\tChart.defaults.global.responsive = true;\n\tChart.defaults.global.tooltipTemplate = \" <%=label%>: <%= numeral(value).format('(00[.]00)') %> - <%= numeral(circumference / 6.283).format('(0[.][00]%)') %>\";\n    \n    $scope.$watch('properties.rawData', function(newValue, oldValue) {\n         $scope.initChart();\n    });\n    \n    $scope.$watch('properties.aggregationProperty', function(newValue, oldValue) {\n         $scope.initChart();\n    });\n    \n    $scope.initChart = function() {\n        if (angular.isUndefined($scope.properties.rawData)\n            || angular.isUndefined($scope.properties.aggregationProperty))\n            return;\n        // Aggregate data\n    \tvar aggregatedData = {};\n    \t$scope.properties.rawData.forEach(function(entry) {\n    \t    var aggregationValue = entry[$scope.properties.aggregationProperty]; \n    \t\tif (aggregatedData[aggregationValue])\n    \t\t\taggregatedData[aggregationValue] ++;\n    \t\telse\n    \t\t\taggregatedData[aggregationValue] = 1;\n    \t});\n    \t// Pass data to chart\n    \t$scope.labels = [];\n    \t$scope.data = [];\n    \tvar keys = Object.keys(aggregatedData);\n    \tkeys.forEach(function(key) {\n    \t\t$scope.labels.push(key);\n    \t\t$scope.data.push(aggregatedData[key]);\n    \t});  \n    };\n}",
+  "description" : "Pie Chart",
+  "custom" : true,
+  "properties" : [ {
+    "label" : "Data",
+    "name" : "rawData",
+    "type" : "text",
+    "bond" : "expression"
+  }, {
+    "label" : "Aggregation property",
+    "name" : "aggregationProperty",
+    "type" : "text",
+    "bond" : "expression"
+  } ],
+  "assets" : [ {
+    "id" : "2f140504-090c-4ec0-b91f-18b1801d737d",
+    "name" : "Chart.min.js",
+    "type" : "js",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "d380edec-38e0-4455-8f60-57a02bb36ea7",
+    "name" : "angular-chart.css",
+    "type" : "css",
+    "order" : 4,
+    "external" : false
+  }, {
+    "id" : "4f0688fd-07c5-4159-9416-5dcd9c3e6ef9",
+    "name" : "numeral.min.js",
+    "type" : "js",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "647ff28d-b73b-4bb5-bdce-7e9a8df422d0",
+    "name" : "angular-chart.min.js",
+    "type" : "js",
+    "order" : 3,
+    "external" : false
+  } ],
+  "requiredModules" : [ "chart.js" ],
+  "type" : "widget",
+  "hasHelp" : false
+}

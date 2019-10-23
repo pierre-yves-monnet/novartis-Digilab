@@ -1,0 +1,20 @@
+{
+  "designerVersion" : "1.2.9",
+  "id" : "customHr",
+  "name" : "hr",
+  "lastUpdate" : 1571381162370,
+  "template" : "<hr>",
+  "controller" : "",
+  "custom" : true,
+  "properties" : [ {
+    "label" : "Value",
+    "name" : "value",
+    "type" : "text",
+    "defaultValue" : "This is the initial value",
+    "bond" : "expression"
+  } ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

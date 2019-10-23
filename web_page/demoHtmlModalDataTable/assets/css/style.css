@@ -30,15 +30,13 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     overflow-y: auto;
 }
 
+
+.modal-lg{
+    width:95%;
+}
+
 .modal-open .datepicker,
 .modal-open .timepicker {
     z-index: 9999;
 }
 
-.document-iframe{
- width:66%; 
- height:400px;
- margin-left: 15%;
- margin-right: 15%;
- margin-bottom: 40px;
-}

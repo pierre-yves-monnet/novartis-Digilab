@@ -1,0 +1,1479 @@
+{
+  "designerVersion" : "1.9.24",
+  "previousDesignerVersion" : "1.2.9",
+  "id" : "385694cf-8619-4293-a732-69c0f5ca8b4d",
+  "name" : "invoiceMain",
+  "lastUpdate" : 1571381163034,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "lg" : 12,
+      "md" : 12,
+      "sm" : 12,
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "expression",
+        "value" : "bdm_invoice == \"\""
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "10a03838-c669-469b-b5a3-7ffc9fe8aaf0",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "container",
+      "dimension" : {
+        "lg" : 6,
+        "md" : 6,
+        "sm" : 12,
+        "xs" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "61debc0f-01f5-43b3-b895-2ee6bcbea9ee",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "lg" : 12,
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Invoices per departments"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 3"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "2e56ae53-8066-4a7d-adf9-8974075039fd",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "container",
+        "dimension" : {
+          "lg" : 2,
+          "md" : 2,
+          "sm" : 2,
+          "xs" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "146bf9fd-252a-4374-80ce-b233f3f26e69",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ ] ]
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "lg" : 8,
+          "md" : 8,
+          "sm" : 8,
+          "xs" : 10
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Pie"
+          },
+          "data" : {
+            "type" : "expression",
+            "value" : "chart.departments.data"
+          },
+          "labels" : {
+            "type" : "expression",
+            "value" : "chart.departments.labels"
+          },
+          "setLabels" : {
+            "type" : "constant",
+            "value" : [ "Default set label" ]
+          },
+          "legendHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "colors" : {
+            "type" : "constant"
+          },
+          "options" : {
+            "type" : "constant"
+          }
+        },
+        "reference" : "7841075d-d85a-487b-9fec-f40676c90d6d",
+        "hasValidationError" : false,
+        "id" : "pbChart"
+      }, {
+        "type" : "container",
+        "dimension" : {
+          "lg" : 2,
+          "md" : 2,
+          "sm" : 2,
+          "xs" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "3e535d94-eb02-4016-b4a3-5ec2cec5d77c",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ ] ]
+      } ] ]
+    }, {
+      "type" : "container",
+      "dimension" : {
+        "lg" : 6,
+        "md" : 6,
+        "sm" : 12,
+        "xs" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "6ce4d91f-cbbe-4b9a-9dc7-c941d530b30f",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "lg" : 12,
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Invoices per month"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 3"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "56c54e4f-ab4d-41d3-bf17-e327e82760c2",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "container",
+        "dimension" : {
+          "lg" : 2,
+          "md" : 2,
+          "sm" : 2,
+          "xs" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "7e500a3d-6b9d-4912-a7f1-8beca2722efe",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ ] ]
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "lg" : 8,
+          "md" : 8,
+          "sm" : 8,
+          "xs" : 10
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Line"
+          },
+          "data" : {
+            "type" : "expression",
+            "value" : "chart.months.data"
+          },
+          "labels" : {
+            "type" : "expression",
+            "value" : "chart.months.labels"
+          },
+          "setLabels" : {
+            "type" : "constant",
+            "value" : [ "Default set label" ]
+          },
+          "legendHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "colors" : {
+            "type" : "constant"
+          },
+          "options" : {
+            "type" : "constant"
+          }
+        },
+        "reference" : "4b9b8ca6-2b79-4215-be2f-f7197a6d4020",
+        "hasValidationError" : false,
+        "id" : "pbChart"
+      }, {
+        "type" : "container",
+        "dimension" : {
+          "lg" : 2,
+          "md" : 2,
+          "sm" : 2,
+          "xs" : 1
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "8671f8cd-5546-4c50-906a-8055a6b5ee78",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ ] ]
+      } ] ]
+    } ] ]
+  } ], [ {
+    "type" : "tabsContainer",
+    "dimension" : {
+      "lg" : 12,
+      "md" : 12,
+      "sm" : 12,
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "10158ab8-1a18-4e81-9e78-77d400f7bb34",
+    "hasValidationError" : false,
+    "id" : "pbTabsContainer",
+    "tabs" : [ {
+      "container" : {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "b50b4e20-12eb-4ba8-bd0f-51312b499078",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "lg" : 12,
+            "md" : 12,
+            "sm" : 12,
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "expression",
+              "value" : "bdm_invoice != \"\""
+            },
+            "text" : {
+              "type" : "interpolation",
+              "value" : "There are 0 open invoices. Use the button to create a new invoice."
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            },
+            "allowHTML" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : ""
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            }
+          },
+          "reference" : "69189a09-7288-4c12-baa2-58cd6d956e9f",
+          "hasValidationError" : false,
+          "id" : "pbText"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "lg" : 8,
+            "md" : 8,
+            "sm" : 9,
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "expression",
+              "value" : "bdm_invoice == \"\""
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Filter:"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 2
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "filterInvoice"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "text"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            },
+            "step" : {
+              "type" : "constant",
+              "value" : 1
+            }
+          },
+          "reference" : "3b22ab4b-4ee2-45e6-bd64-0ddaaaa00acf",
+          "hasValidationError" : false,
+          "id" : "pbInput"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "lg" : 4,
+            "md" : 4,
+            "sm" : 3,
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : "vert-offset-top-2"
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "text" : {
+              "type" : "interpolation",
+              "value" : "+ Create New Invoice"
+            },
+            "targetUrl" : {
+              "type" : "expression",
+              "value" : "getCreateInvoiceUrl"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "right"
+            },
+            "buttonStyle" : {
+              "type" : "constant",
+              "value" : "primary"
+            },
+            "target" : {
+              "type" : "constant",
+              "value" : "_self"
+            }
+          },
+          "reference" : "23a089e4-e5a8-49c7-826d-41769340106a",
+          "hasValidationError" : false,
+          "id" : "pbLink"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "lg" : 12,
+            "md" : 12,
+            "sm" : 12,
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : "bold"
+            },
+            "hidden" : {
+              "type" : "expression",
+              "value" : "bdm_invoice == \"\""
+            },
+            "headers" : {
+              "type" : "constant",
+              "value" : [ "Invoice No.", "Date", "Customer Name", "Department", "Amount($)", "Status" ]
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "Variable"
+            },
+            "apiUrl" : {
+              "type" : "constant",
+              "value" : ".. /API/"
+            },
+            "params" : {
+              "type" : "constant"
+            },
+            "content" : {
+              "type" : "expression",
+              "value" : "bdm_invoice"
+            },
+            "columnsKey" : {
+              "type" : "constant",
+              "value" : [ "invoiceId", "invoiceDate| date:\"yyyy/MM/dd\"", "customerName", "department", "invoiceAmount", "status" ]
+            },
+            "selectedRow" : {
+              "type" : "variable",
+              "value" : "rowSelected"
+            },
+            "pageSize" : {
+              "type" : "constant",
+              "value" : 10
+            },
+            "filter" : {
+              "type" : "expression",
+              "value" : "filterInvoice"
+            },
+            "sortColumns" : {
+              "type" : "constant"
+            }
+          },
+          "reference" : "0dafeb8d-813e-4983-b7c1-e9cda94768dc",
+          "hasValidationError" : false,
+          "id" : "pbDataTable"
+        } ], [ {
+          "type" : "tabsContainer",
+          "dimension" : {
+            "lg" : 12,
+            "md" : 12,
+            "sm" : 12,
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "expression",
+              "value" : "!obj_comments"
+            }
+          },
+          "reference" : "50e4e029-9da4-48a6-a2a5-d122f1ac47c7",
+          "hasValidationError" : false,
+          "id" : "pbTabsContainer",
+          "tabs" : [ {
+            "container" : {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "a70069dc-7801-4779-be2b-76d8e5619608",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [ [ {
+                "type" : "component",
+                "dimension" : {
+                  "lg" : 12,
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : ""
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : ""
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  }
+                },
+                "reference" : "e0d2aadc-6c5b-4a7c-a9fc-ef067eaa2b05",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              } ], [ {
+                "type" : "container",
+                "dimension" : {
+                  "lg" : 12,
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!obj_comments"
+                  },
+                  "repeatedCollection" : {
+                    "type" : "expression",
+                    "value" : ""
+                  }
+                },
+                "reference" : "47f1732c-8fb2-416e-82a3-0977a6304592",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [ [ {
+                  "type" : "component",
+                  "dimension" : {
+                    "lg" : 12,
+                    "md" : 12,
+                    "sm" : 12,
+                    "xs" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "readOnly" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "required" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "minLength" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "maxLength" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "label" : {
+                      "type" : "interpolation",
+                      "value" : "Add a new comment"
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 2
+                    },
+                    "value" : {
+                      "type" : "variable",
+                      "value" : "comment"
+                    }
+                  },
+                  "reference" : "4e54d20e-1caf-47d3-89b8-ed30e23bb950",
+                  "hasValidationError" : false,
+                  "id" : "pbTextarea"
+                }, {
+                  "type" : "component",
+                  "dimension" : {
+                    "lg" : 12,
+                    "md" : 12,
+                    "sm" : 12,
+                    "xs" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "disabled" : {
+                      "type" : "constant",
+                      "value" : false
+                    },
+                    "label" : {
+                      "type" : "interpolation",
+                      "value" : "Comment"
+                    },
+                    "alignment" : {
+                      "type" : "constant",
+                      "value" : "right"
+                    },
+                    "buttonStyle" : {
+                      "type" : "constant",
+                      "value" : "success"
+                    },
+                    "action" : {
+                      "type" : "constant",
+                      "value" : "POST"
+                    },
+                    "url" : {
+                      "type" : "interpolation",
+                      "value" : "/bonita/API/bpm/comment/"
+                    },
+                    "dataToSend" : {
+                      "type" : "expression",
+                      "value" : "response"
+                    },
+                    "dataFromSuccess" : {
+                      "type" : "variable",
+                      "value" : "commentSuccess"
+                    },
+                    "dataFromError" : {
+                      "type" : "variable",
+                      "value" : "commentError"
+                    },
+                    "collectionToModify" : {
+                      "type" : "variable"
+                    },
+                    "collectionPosition" : {
+                      "type" : "constant",
+                      "value" : "Last"
+                    },
+                    "valueToAdd" : {
+                      "type" : "constant"
+                    },
+                    "targetUrlOnSuccess" : {
+                      "type" : "interpolation"
+                    },
+                    "removeItem" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "02defdfa-338a-4ee7-8a34-60ab94dadbd4",
+                  "hasValidationError" : false,
+                  "id" : "pbButton"
+                } ], [ {
+                  "type" : "component",
+                  "dimension" : {
+                    "lg" : 12,
+                    "md" : 12,
+                    "sm" : 12,
+                    "xs" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : "bg-success"
+                    },
+                    "hidden" : {
+                      "type" : "expression",
+                      "value" : "!popUpCommentSucces"
+                    },
+                    "text" : {
+                      "type" : "interpolation",
+                      "value" : "<strong>Comment added successfully!</strong>"
+                    },
+                    "alignment" : {
+                      "type" : "constant",
+                      "value" : "center"
+                    },
+                    "allowHTML" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "labelHidden" : {
+                      "type" : "constant",
+                      "value" : true
+                    },
+                    "label" : {
+                      "type" : "interpolation",
+                      "value" : ""
+                    },
+                    "labelPosition" : {
+                      "type" : "constant",
+                      "value" : "top"
+                    },
+                    "labelWidth" : {
+                      "type" : "constant",
+                      "value" : 4
+                    }
+                  },
+                  "reference" : "f4f5d215-cb93-486a-9d13-b305a88a6551",
+                  "hasValidationError" : false,
+                  "id" : "pbText"
+                } ], [ {
+                  "type" : "component",
+                  "dimension" : {
+                    "lg" : 12,
+                    "md" : 12,
+                    "sm" : 12,
+                    "xs" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "expression",
+                      "value" : "obj_comments == \"\""
+                    },
+                    "headers" : {
+                      "type" : "constant",
+                      "value" : [ "Post Date", "Username", "Comment" ]
+                    },
+                    "content" : {
+                      "type" : "expression",
+                      "value" : "obj_comments"
+                    },
+                    "columnsKey" : {
+                      "type" : "constant",
+                      "value" : [ "postDate | date:\"dd-MM-yyyy\"", "userId.userName", "content" ]
+                    },
+                    "selectedRow" : {
+                      "type" : "variable"
+                    }
+                  },
+                  "reference" : "ba8ab8fb-26cd-411c-aaf0-aa4f3019c44f",
+                  "hasValidationError" : false,
+                  "id" : "pbTable"
+                } ], [ {
+                  "type" : "component",
+                  "dimension" : {
+                    "lg" : 12,
+                    "md" : 12,
+                    "sm" : 12,
+                    "xs" : 12
+                  },
+                  "propertyValues" : {
+                    "cssClasses" : {
+                      "type" : "constant",
+                      "value" : ""
+                    },
+                    "hidden" : {
+                      "type" : "expression",
+                      "value" : "!userLoggedName"
+                    },
+                    "value" : {
+                      "type" : "constant",
+                      "value" : "This is the initial value"
+                    }
+                  },
+                  "reference" : "133cd7c7-97fb-4fa2-aedb-6896ee110c23",
+                  "hasValidationError" : false,
+                  "id" : "customHr"
+                } ] ]
+              } ] ]
+            },
+            "title" : "Comments"
+          }, {
+            "container" : {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "1069d767-0c7a-4ed7-a16f-5d83e051828a",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [ [ {
+                "type" : "component",
+                "dimension" : {
+                  "lg" : 12,
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "expression",
+                    "value" : "caseVisuUrl"
+                  },
+                  "style" : {
+                    "type" : "constant",
+                    "value" : "width:100%; min-height:500px; border:0px solid;"
+                  }
+                },
+                "reference" : "e1ade50f-8716-42c6-8422-2590f868c4d4",
+                "hasValidationError" : false,
+                "id" : "customIFrameV703"
+              } ] ]
+            },
+            "title" : "Diagram"
+          } ]
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "lg" : 12,
+            "md" : 12,
+            "sm" : 12,
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "text" : {
+              "type" : "interpolation",
+              "value" : "taskInfo: {{taskInfo | json}} <br/> userTasks: {{userTasks | json}} <br/>rowselected: {{rowSelected | json}}"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            },
+            "allowHTML" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : true
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : ""
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            }
+          },
+          "reference" : "17ba9121-b5b1-4cde-a117-ddf31b35eb86",
+          "hasValidationError" : false,
+          "id" : "pbText"
+        } ], [ {
+          "type" : "container",
+          "dimension" : {
+            "lg" : 12,
+            "md" : 12,
+            "sm" : 12,
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "expression",
+              "value" : "!userLoggedName"
+            },
+            "repeatedCollection" : {
+              "type" : "variable",
+              "value" : ""
+            }
+          },
+          "reference" : "ef669306-6fc4-4f80-9134-5ffafb8d780a",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [ [ {
+            "type" : "component",
+            "dimension" : {
+              "lg" : 12,
+              "md" : 12,
+              "sm" : 12,
+              "xs" : 12
+            },
+            "propertyValues" : {
+              "cssClasses" : {
+                "type" : "constant",
+                "value" : ""
+              },
+              "hidden" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "url" : {
+                "type" : "expression",
+                "value" : "taskInfo"
+              },
+              "style" : {
+                "type" : "constant",
+                "value" : "width:100%; border: 0px solid; min-height: 900px;"
+              }
+            },
+            "reference" : "ece12bc7-10d4-460b-9ad4-6bb907f91088",
+            "hasValidationError" : false,
+            "id" : "customIFrameV703"
+          } ] ]
+        } ] ]
+      },
+      "title" : "Open invoices"
+    }, {
+      "container" : {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "efaad579-a406-4c7a-b137-0eea973dbfdc",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "lg" : 12,
+            "md" : 7,
+            "sm" : 12,
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "expression",
+              "value" : "bdm_invoiceClosed ==\"\""
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Filter:"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "filterInvoice"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "text"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            }
+          },
+          "reference" : "7fa4fe37-c37f-44ca-acb0-b1887862bec9",
+          "hasValidationError" : false,
+          "id" : "pbInput"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "lg" : 12,
+            "md" : 12,
+            "sm" : 12,
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "headers" : {
+              "type" : "constant",
+              "value" : [ "Invoice No.", "Creation Date", "First Name", "Last Name", "Customer Name", "Department", "Amount($)", "Status" ]
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "Variable"
+            },
+            "apiUrl" : {
+              "type" : "constant",
+              "value" : "../API/"
+            },
+            "params" : {
+              "type" : "constant"
+            },
+            "content" : {
+              "type" : "expression",
+              "value" : "bdm_invoiceClosed"
+            },
+            "columnsKey" : {
+              "type" : "constant",
+              "value" : [ "invoiceId", "invoiceDate | date:\"dd/MM/yyyy\"", "firstName", "lastName", "customerName", "department", "invoiceAmount", "status" ]
+            },
+            "selectedRow" : {
+              "type" : "variable",
+              "value" : "rowSelected2"
+            },
+            "pageSize" : {
+              "type" : "constant",
+              "value" : 10
+            },
+            "filter" : {
+              "type" : "expression",
+              "value" : "filterInvoice"
+            }
+          },
+          "reference" : "acb473c8-3511-4ac7-bee7-5dda1ad49eef",
+          "hasValidationError" : false,
+          "id" : "pbDataTable"
+        } ] ]
+      },
+      "title" : "Closed invoices"
+    } ]
+  } ] ],
+  "assets" : [ {
+    "id" : "ed5733b3-9425-4704-99bd-4ee375f2d978",
+    "name" : "ui-bootstrap-tpls-0.13.0.min.js",
+    "type" : "js",
+    "order" : 6,
+    "external" : false
+  }, {
+    "id" : "3835db70-fb4b-46c3-a087-6646715e2f0f",
+    "name" : "layout.js",
+    "type" : "js",
+    "order" : 4,
+    "external" : false
+  }, {
+    "id" : "9c9abb40-ee4b-45b3-86cc-262a7a01dcf7",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 3,
+    "external" : false
+  }, {
+    "id" : "45e4d331-87f4-474a-a823-b3e452ececfe",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 5,
+    "external" : false
+  }, {
+    "id" : "0d77f2ab-f6d4-48de-bca6-636474b8c8d9",
+    "name" : "lodash-3.9.3.js",
+    "type" : "js",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "3e075d21-dd59-4b38-add2-9a04221b028f",
+    "name" : "bootstrap-3-vert-offset-shim.css",
+    "type" : "css",
+    "order" : 2,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "bdm_invoice" : {
+      "type" : "url",
+      "value" : "/bonita/API/bdm/businessData/com.company.model.Invoice?p=0&c=100&o=processId%3dDESC&q=getOpenInvoices",
+      "exposed" : false
+    },
+    "rowSelected" : {
+      "type" : "json",
+      "value" : "{}",
+      "exposed" : false
+    },
+    "obj_comments" : {
+      "type" : "url",
+      "value" : "/bonita/API/bpm/comment?p=0&c=100&o=postDate%20DESC&f=processInstanceId%3d{{rowSelected.processInstanceId}}&d=userId&d=userId",
+      "exposed" : false
+    },
+    "commentSuccess" : {
+      "type" : "constant",
+      "value" : "",
+      "exposed" : false
+    },
+    "commentError" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "comment" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "response" : {
+      "type" : "expression",
+      "value" : "return { \"processInstanceId\": $data.processInstanceId, \"content\": $data.comment};",
+      "exposed" : false
+    },
+    "filterInvoice" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "message" : {
+      "type" : "expression",
+      "value" : "if(!!$data.commentSuccess){\n    //alert(\"comment script\");\n    $data.commentSuccess=null;\n    $data.comment = \"\";\n    $data.popUpCommentSucces=\"Comment added successfully!\";\n    //var toto = $data.obj_comments;\n    stateChange();\n\n    //return \"<strong id='successComment'>Comment added successfully!</strong>\";\n}\n\nfunction stateChange() {\n    setTimeout(function () {\n        $data.popUpCommentSucces=\"\";\n    }, 2000);\n}",
+      "exposed" : false
+    },
+    "bdm_invoiceClosed" : {
+      "type" : "url",
+      "value" : "/bonita/API/bdm/businessData/com.company.model.Invoice?p=0&c=100&o=processId%3dDESC&q=getClosedInvoice",
+      "exposed" : false
+    },
+    "departments" : {
+      "type" : "expression",
+      "value" : "var departs = $data.bdm_invoice.map(function(dep) {\r\n    return dep.department;\r\n});\r\n\r\nreturn _.uniq(departs).map(function(department) {\r\n    return {\r\n        \"label\" : department,\r\n        \"value\" : departs.filter(function(c) {\r\n            return c === department;\r\n        }).length\r\n    };\r\n});\r\n\r\n",
+      "exposed" : false
+    },
+    "kpi_departments" : {
+      "type" : "expression",
+      "value" : "var red = \"#F7464A\";\r\nvar hred = \"#FF5A5E\";\r\nvar yellow = \"#FDB45C\";\r\nvar hyellow = \"#FFC870\";\r\nvar grey = \"#949FB1\";\r\nvar hgrey = \"#A8B3C5\";\r\nvar green = \"#46BFBD\";\r\nvar hgreen = \"#5AD3D1\";\r\n\r\nif($data.departments){\r\n    return $data.departments.map(function (depart) {\r\n        if (depart.label == \"HR\") {\r\n            depart.color = red;\r\n            depart.highlight = hred;\r\n        } else if (depart.label == \"Marketing\") {\r\n            depart.color = yellow;\r\n            depart.highlight = hyellow;\r\n        } else if (depart.label == \"IT\") {\r\n            depart.color = grey;\r\n            depart.highlight = hgrey;\r\n        } else if (depart.label == \"Sales\") {\r\n            depart.color = green;\r\n            depart.highlight = hgreen;\r\n        }\r\n        return depart;\r\n    });\r\n}",
+      "exposed" : false
+    },
+    "kpi_departments_opt" : {
+      "type" : "expression",
+      "value" : "return {\r\n    //Boolean - Whether we should show a stroke on each segment\r\n    segmentShowStroke : true,\r\n\r\n    //String - The colour of each segment stroke\r\n    segmentStrokeColor : \"#fff\",\r\n\r\n    //Number - The width of each segment stroke\r\n    segmentStrokeWidth : 2,\r\n\r\n    //Number - The percentage of the chart that we cut out of the middle\r\n    percentageInnerCutout : 0, // This is 0 for Pie charts\r\n\r\n    //Number - Amount of animation steps\r\n    animationSteps : 100,\r\n\r\n    //String - Animation easing effect\r\n    animationEasing : \"easeOutBounce\",\r\n\r\n    //Boolean - Whether we animate the rotation of the Doughnut\r\n    animateRotate : true,\r\n\r\n    //Boolean - Whether we animate scaling the Doughnut from the centre\r\n    animateScale : false,\r\n\r\n    //String - A legend template\r\n    legendTemplate : \"<ul class=\\\"<%=name.toLowerCase()%>-legend\\\"><% for (var i=0; i<segments.length; i++){%><li><span style=\\\"background-color:<%=segments[i].fillColor%>\\\"></span><%if(segments[i].label && segments[i].value){%><%=(segments[i].label+\\\":\\\"+segments[i].value)%><%}%></li><%}%></ul>\"\r\n\r\n}",
+      "exposed" : false
+    },
+    "rowSelected2" : {
+      "type" : "json",
+      "value" : "{}",
+      "exposed" : false
+    },
+    "kpi_amount" : {
+      "type" : "expression",
+      "value" : "/* bar chart */\r\nvar output = {\r\n\tlabels: [],\r\n    datasets: [\r\n        {   label: \"Greater than 5000\",\r\n            fillColor: \"rgba(220,220,220,0.2)\",\r\n            strokeColor: \"rgba(220,220,220,1)\",\r\n            pointColor: \"rgba(220,220,220,1)\",\r\n            pointStrokeColor: \"#fff\",\r\n            pointHighlightFill: \"#fff\",\r\n            pointHighlightStroke: \"rgba(220,220,220,1)\",\r\n            data: []\r\n        },\r\n        {   label: \"Lower than 5000\",\r\n            fillColor: \"rgba(151,187,205,0.2)\",\r\n            strokeColor: \"rgba(151,187,205,1)\",\r\n            pointColor: \"rgba(151,187,205,1)\",\r\n            pointStrokeColor: \"#fff\",\r\n            pointHighlightFill: \"#fff\",\r\n            pointHighlightStroke: \"rgba(151,187,205,1)\",\r\n            data: []\r\n        }\r\n    ]\r\n};\r\n\r\nvar monthsW = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"];\r\nvar months = [];\r\nvar operData = [];\r\n//var media = 0;\r\nvar counter = 0; \r\n\r\nfunction fillOutput(bdm1, bdm2){\r\n\r\n    if(bdm1 && bdm2){\r\n        var timestamp = bdm1[0].invoiceDate < bdm2[0].invoiceDate ? bdm1[0].invoiceDate : bdm2[0].invoiceDate;\r\n        var date = new Date(timestamp);\r\n        var monthItem = date.getMonth() + 1;\r\n        \r\n        operData.push({'month':monthItem, 'small':0,'big':0});\r\n        \r\n        timestamp = bdm1[bdm1.length-1].invoiceDate > bdm2[bdm2.length-1].invoiceDate ? bdm1[bdm1.length-1].invoiceDate : bdm2[bdm2.length-1].invoiceDate;\r\n        date = new Date(timestamp);\r\n        var monthItem2 = date.getMonth() + 1;\r\n        for(var i = monthItem+1; i <= monthItem2; i++){\r\n            operData.push({'month':i, 'small':0,'big':0});    \r\n        }\r\n        console.log(\"operData: \", operData);\r\n        var lookup = {};\r\n        for (var i = 0, len = operData.length; i < len; i++) {\r\n            lookup[operData[i].month] = operData[i];\r\n        }\r\n\r\n\r\n        var index;\r\n        for (var i = 0, len = bdm1.length; i < len; i++) {\r\n            timestamp = bdm1[i].invoiceDate;\r\n            date = new Date(timestamp);\r\n            monthItem = date.getMonth() + 1;\r\n            //index = operData.indexOf({'month':monthItem});\r\n            //operData[index].small =+1;\r\n            lookup[monthItem].small++;\r\n        }\r\n\r\n        for (var i = 0, len = bdm2.length; i < len; i++) {\r\n            timestamp = bdm2[i].invoiceDate;\r\n            date = new Date(timestamp);\r\n            monthItem = date.getMonth() + 1;\r\n            //index = operData.indexOf({'month':monthItem});\r\n            //operData[index].big++;\r\n            lookup[monthItem].big++;\r\n        }\r\n\r\n\r\n    for(var i = 0; i <operData.length; i++){\r\n        output.labels.push(monthsW[operData[i].month-1]);\r\n        output.datasets[1].data.push(operData[i].small);\r\n        output.datasets[0].data.push(operData[i].big);\r\n    }\r\n\r\n        return output;\r\n\r\n    }\r\n}\r\n\r\n   return fillOutput($data.bdm_invoiceLowerThan5k,$data.bdm_invoiceGreaterThan5k);     \r\n\r\n\r\n\r\n",
+      "exposed" : false
+    },
+    "bdm_invoiceGreaterThan5k" : {
+      "type" : "url",
+      "value" : "/bonita/API/bdm/businessData/com.company.model.Invoice?p=0&c=100&o=processId%3dDESC&q=getGreaterThan5k",
+      "exposed" : false
+    },
+    "kpi_amount_opt" : {
+      "type" : "expression",
+      "value" : "return {\r\n    //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value\r\n    scaleBeginAtZero : true,\r\n\r\n    //Boolean - Whether grid lines are shown across the chart\r\n    scaleShowGridLines : true,\r\n\r\n    //String - Colour of the grid lines\r\n    scaleGridLineColor : \"rgba(0,0,0,.05)\",\r\n\r\n    //Number - Width of the grid lines\r\n    scaleGridLineWidth : 1,\r\n\r\n    //Boolean - Whether to show horizontal lines (except X axis)\r\n    scaleShowHorizontalLines: true,\r\n\r\n    //Boolean - Whether to show vertical lines (except Y axis)\r\n    scaleShowVerticalLines: true,\r\n\r\n    //Boolean - If there is a stroke on each bar\r\n    barShowStroke : true,\r\n\r\n    //Number - Pixel width of the bar stroke\r\n    barStrokeWidth : 2,\r\n\r\n    //Number - Spacing between each of the X value sets\r\n    barValueSpacing : 5,\r\n\r\n    //Number - Spacing between data sets within X values\r\n    barDatasetSpacing : 1,\r\n\r\n    //String - A legend template\r\n    legendTemplate : \"<ul class=\\\"<%=name.toLowerCase()%>-legend\\\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\\\"background-color:<%=datasets[i].fillColor%>\\\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>\"\r\n\r\n}",
+      "exposed" : false
+    },
+    "bdm_invoiceLowerThan5k" : {
+      "type" : "url",
+      "value" : "/bonita/API/bdm/businessData/com.company.model.Invoice?p=0&c=100&o=processId%3dDESC&q=getLowerThan5k",
+      "exposed" : false
+    },
+    "createInvoiceProcesses" : {
+      "type" : "url",
+      "value" : "/bonita/API/bpm/process?c=100&p=0&f=name=Invoice%20ValidationV7&o=deploymentDate",
+      "exposed" : false
+    },
+    "getCreateInvoiceUrl" : {
+      "type" : "expression",
+      "value" : "/*if ($data.createInvoiceProcesses && $data.createInvoiceProcesses.length) {\n    var process = $data.createInvoiceProcesses[0];\n    return \"/bonita/portal/resource/process/\"+ encodeURI(process.name) +\"/\" + process.version + \"/content/?id=\" + process.id +\"&senderUrl=\"+ window.top.location.href;\n}*/\n\nif ($data.createInvoiceProcesses && $data.createInvoiceProcesses.length>0) {\n    var process = $data.createInvoiceProcesses[0];\n    //alert(process.name+\" \"+$data.createInvoiceProcesses.length);\n    for (var index = 0; index < $data.createInvoiceProcesses.length; index++){\n        //alert($data.createInvoiceProcesses[index].version);\n        //alert('test State: '+$data.createInvoiceProcesses[index].activationState)\n        if ($data.createInvoiceProcesses[index].activationState=='ENABLED' && versionCompare(process.version,$data.createInvoiceProcesses[index].version,'')==-1){\n            //alert(\"Validé1 \"+process);\n            process=$data.createInvoiceProcesses[index];\n            //alert(\"Validé2 \"+process);\n        }\n    }\n    //alert(\"Validé \"+process);\n    return \"/bonita/portal/resource/process/\"+ encodeURI(process.name) +\"/\" + process.version + \"/content/?id=\" + process.id+\"&senderUrl=\"+ window.top.location.href;\n}\n\nfunction versionCompare(v1, v2, options) {\n    var lexicographical = options && options.lexicographical,\n        zeroExtend = options && options.zeroExtend,\n        v1parts = v1.split('.'),\n        v2parts = v2.split('.');\n\n    function isValidPart(x) {\n        return (lexicographical ? /^\\d+[A-Za-z]*$/ : /^\\d+$/).test(x);\n    }\n\n    if (!v1parts.every(isValidPart) || !v2parts.every(isValidPart)) {\n        return NaN;\n    }\n\n    if (zeroExtend) {\n        while (v1parts.length < v2parts.length) v1parts.push(\"0\");\n        while (v2parts.length < v1parts.length) v2parts.push(\"0\");\n    }\n\n    if (!lexicographical) {\n        v1parts = v1parts.map(Number);\n        v2parts = v2parts.map(Number);\n    }\n\n    for (var i = 0; i < v1parts.length; ++i) {\n        if (v2parts.length == i) {\n            return 1;\n        }\n\n        if (v1parts[i] == v2parts[i]) {\n            continue;\n        }\n        else if (v1parts[i] > v2parts[i]) {\n            return 1;\n        }\n        else {\n            return -1;\n        }\n    }\n\n    if (v1parts.length != v2parts.length) {\n        return -1;\n    }\n\n    return 0;\n}",
+      "exposed" : false
+    },
+    "loggedUser" : {
+      "type" : "url",
+      "value" : "/bonita/API/system/session/unusedid",
+      "exposed" : false
+    },
+    "userLoggedName" : {
+      "type" : "expression",
+      "value" : "if($data.loggedUser && ($data.loggedUser.user_name == \"william.jobs\" || $data.loggedUser.user_name == \"jan.fisher\")){\n    return true;\n}else{\n    return false;\n}",
+      "exposed" : false
+    },
+    "caseVisuUrl" : {
+      "type" : "expression",
+      "value" : "/*if ($data.createInvoiceProcesses && $data.createInvoiceProcesses.length) {\n    var process = $data.createInvoiceProcesses[0];\n\treturn \"/bonita/portal.js/#/admin/monitoring/\"+process.id+\"-\"+$data.processInstanceId+\"?diagramOnly=1\";\n}*/\n\nif ($data.createInvoiceProcesses && $data.createInvoiceProcesses.length>0) {\n    var process = $data.createInvoiceProcesses[0];\n    //alert(process.version+\" \"+$data.process.length);\n    for (var index = 0; index < $data.createInvoiceProcesses.length; index++){\n        //alert($data.createInvoiceProcesses[index].version);\n        //alert('test State: '+$data.createInvoiceProcesses[index].activationState)\n        if ($data.createInvoiceProcesses[index].activationState=='ENABLED' && versionCompare(process.version,$data.createInvoiceProcesses[index].version,'')==-1){\n            //alert(\"Validé1 \"+process);\n            process=$data.createInvoiceProcesses[index];\n            //alert(\"Validé2 \"+process);\n        }\n    }\n    //alert(\"Validé \"+process);\n    return \"/bonita/portal.js/#/admin/monitoring/\"+process.id+\"-\"+$data.processInstanceId+\"?diagramOnly=1\";\n}\n\nfunction versionCompare(v1, v2, options) {\n    var lexicographical = options && options.lexicographical,\n        zeroExtend = options && options.zeroExtend,\n        v1parts = v1.split('.'),\n        v2parts = v2.split('.');\n\n    function isValidPart(x) {\n        return (lexicographical ? /^\\d+[A-Za-z]*$/ : /^\\d+$/).test(x);\n    }\n\n    if (!v1parts.every(isValidPart) || !v2parts.every(isValidPart)) {\n        return NaN;\n    }\n\n    if (zeroExtend) {\n        while (v1parts.length < v2parts.length) v1parts.push(\"0\");\n        while (v2parts.length < v1parts.length) v2parts.push(\"0\");\n    }\n\n    if (!lexicographical) {\n        v1parts = v1parts.map(Number);\n        v2parts = v2parts.map(Number);\n    }\n\n    for (var i = 0; i < v1parts.length; ++i) {\n        if (v2parts.length == i) {\n            return 1;\n        }\n\n        if (v1parts[i] == v2parts[i]) {\n            continue;\n        }\n        else if (v1parts[i] > v2parts[i]) {\n            return 1;\n        }\n        else {\n            return -1;\n        }\n    }\n\n    if (v1parts.length != v2parts.length) {\n        return -1;\n    }\n\n    return 0;\n}",
+      "exposed" : false
+    },
+    "processInstanceId" : {
+      "type" : "expression",
+      "value" : "return $data.rowSelected.processInstanceId; ",
+      "exposed" : false
+    },
+    "userTasks" : {
+      "type" : "url",
+      "value" : "../API/bpm/humanTask?c=100&p=0&f=state=ready&f=user_id={{loggedUser.user_id}}",
+      "exposed" : false
+    },
+    "taskInfo" : {
+      "type" : "expression",
+      "value" : "if($data.rowSelected && $data.userTasks){\n    for(var i=0;i < $data.userTasks.length; i++){\n        \n        if($data.rowSelected.processInstanceId == $data.userTasks[i].rootCaseId){\n            \n            var url = \"/bonita/portal/form/taskInstance/\"+ $data.userTasks[i].id;\n            console.log(\"URL: \", url);\n            \n            return url;\n        }\n    }\n}",
+      "exposed" : false
+    },
+    "invoices" : {
+      "type" : "url",
+      "value" : "/bonita/API/bdm/businessData/com.company.model.Invoice?p=0&c=100&o=processId%3dDESC&q=find",
+      "exposed" : false
+    },
+    "chart" : {
+      "type" : "expression",
+      "value" : "function sum(invoices, property) {\n    return invoices.reduce(function(acc, invoice) {\n        acc[invoice[property]] = acc[invoice[property]] ? acc[invoice[property]] + 1 : 1;\n        return acc;\n    }, {});\n}\n\nfunction getValues(object) {\n    return Object.keys(object).map(function (key) {\n        return object[key];\n    });\n}\n\nfunction getKeys(object) {\n    return Object.keys(object);\n}\n\nfunction compareDate(actual, other) {\n    var actualDate = new Date(actual.invoiceDate);\n    var otherDate = new Date(other.invoiceDate);\n\n    if (actualDate < otherDate)\n        return -1;\n    if (actualDate > otherDate)\n        return 1;\n    return 0;\n}\n\nif(angular.isDefined($data.invoices) && $data.invoices){\n    var invoicesPerDepartments = sum($data.invoices, 'department');\n    var invoicesPerCustomer = sum($data.invoices, 'customerName');\n\n    var invoicesPerDays = sum($data.invoices.sort(compareDate)\n        .map(function(invoice) {\n            invoice.weekday = new Date(invoice.invoiceDate).getDay();\n            return invoice;\n        }), 'weekday');\n\n\n    var invoicesPerMonth = sum($data.invoices.sort(compareDate)\n        .map(function(invoice) {\n            invoice.month = new Date(invoice.invoiceDate).getMonth();\n            return invoice;\n        }), 'month');\n}\n\nreturn {\n    departments: {\n        data: getValues(invoicesPerDepartments),\n        labels: getKeys(invoicesPerDepartments)\n    },\n    days: {\n        data: getValues(invoicesPerDays),\n        labels: getKeys(invoicesPerDays).map(function(weekday) {\n            return $data.weekdays[weekday];\n        })\n\t},\n    months: {\n        data: getValues(invoicesPerMonth),\n        labels: getKeys(invoicesPerMonth).map(function(month) {\n            return $data.months[month];\n        })\n    },\n    customers: {\n        data: getValues(invoicesPerCustomer),\n        labels: getKeys(invoicesPerCustomer)\n    }\n};\n",
+      "exposed" : false
+    },
+    "months" : {
+      "type" : "json",
+      "value" : "[\n    \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n    \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n]\n",
+      "exposed" : false
+    },
+    "weekdays" : {
+      "type" : "json",
+      "value" : "[\n    \"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"\n]",
+      "exposed" : false
+    },
+    "obj_comments2" : {
+      "type" : "expression",
+      "value" : "function httpGet(theUrl)\r\n{\r\n    alert(\"GET url\")\r\n    var xmlHttp = new XMLHttpRequest();\r\n    xmlHttp.open( \"GET\", theUrl, false ); // false for synchronous request\r\n    xmlHttp.overrideMimeType('application/json');\r\n    xmlHttp.send( null );\r\n    return xmlHttp.responseText;\r\n}\r\n\r\nreturn invokeService(\"http://localhost:8080/bonita/API/bpm/comment?p=0&c=100&o=postDate%20DESC&f=processInstanceId%3d\"+$data.rowSelected.processInstanceId+\"&d=userId&d=userId\");",
+      "exposed" : false
+    },
+    "popUpCommentSucces" : {
+      "type" : "constant",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "385694cf-8619-4293-a732-69c0f5ca8b4d",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.45",
   "id" : "Notification",
   "name" : "Notification",
-  "lastUpdate" : 1570840016936,
+  "lastUpdate" : 1571384013490,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -55,46 +55,495 @@
       },
       "headers" : {
         "type" : "constant",
-        "value" : [ "Project code", "Campaign", "NVP number", "IUPAC number", "Status", "Next Step" ]
-      },
-      "type" : {
-        "type" : "constant",
-        "value" : "Bonita API"
-      },
-      "apiUrl" : {
-        "type" : "constant",
-        "value" : "../API/bdm/businessData/com.company.model.DrugSubstance?q=find&p=0&c=1000"
-      },
-      "params" : {
-        "type" : "constant",
-        "value" : ""
+        "value" : [ "Project code", "Campaign", "NVP number", "IUPAC number", "Status" ]
       },
       "content" : {
-        "type" : "constant"
+        "type" : "expression",
+        "value" : "drugSubstance"
       },
       "columnsKey" : {
         "type" : "constant",
         "value" : [ "projectCode", "campaign", "nvpNumber", "uipack", "status" ]
       },
-      "sortColumns" : {
-        "type" : "constant",
-        "value" : [ "projectCode", "campaign", "nvpNumber", "uipack", "status" ]
-      },
       "selectedRow" : {
         "type" : "variable",
-        "value" : ""
+        "value" : "entry"
       },
-      "pageSize" : {
+      "modalId" : {
         "type" : "constant",
-        "value" : 10
-      },
-      "filter" : {
-        "type" : "constant"
+        "value" : "modal"
       }
     },
-    "reference" : "0f292c17-d99c-48f5-85b5-aafa070c2616",
+    "reference" : "9dcfdcf0-b4e4-4fdb-aaab-5b8aebb4c48a",
     "hasValidationError" : false,
-    "id" : "pbDataTable"
+    "id" : "customTableWithHtmlContentModal"
+  } ], [ {
+    "type" : "modalContainer",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "modalId" : {
+        "type" : "constant",
+        "value" : "modal"
+      },
+      "size" : {
+        "type" : "constant",
+        "value" : "lg"
+      },
+      "animation" : {
+        "type" : "constant",
+        "value" : true
+      }
+    },
+    "reference" : "97e43d8e-01c8-4f59-b160-d3cbfc5ed219",
+    "hasValidationError" : false,
+    "id" : "pbModalContainer",
+    "container" : {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : { },
+      "reference" : "bce4387f-afe5-4c03-b908-6cb8b8fb3fbe",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "X"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "link"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Close modal"
+          },
+          "assign" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "responseStatusCode" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "dataToSend" : {
+            "type" : "constant"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "closeOnSuccess" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "dataFromError" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "collectionPosition" : {
+            "type" : "constant",
+            "value" : "Last"
+          },
+          "valueToAdd" : {
+            "type" : "constant"
+          },
+          "removeItem" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "59b09e70-c98b-4469-9ce8-3fef118f97da",
+        "hasValidationError" : false,
+        "id" : "pbButton"
+      } ], [ {
+        "type" : "tabsContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "2bc95150-6ba3-47dd-b40d-293182c55bb6",
+        "hasValidationError" : false,
+        "id" : "pbTabsContainer",
+        "tabs" : [ {
+          "container" : {
+            "type" : "container",
+            "dimension" : {
+              "xs" : 12
+            },
+            "propertyValues" : { },
+            "reference" : "00c95f97-5fd0-40c6-b395-fe476ed25559",
+            "hasValidationError" : false,
+            "id" : "pbContainer",
+            "rows" : [ [ {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable",
+                  "value" : ""
+                }
+              },
+              "reference" : "3cd97bd4-a8fa-4dca-9017-207ba8ac93f1",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [ [ {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Project details"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "9ee24fde-a9fe-47b8-8cd7-7e090166abe4",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              } ], [ {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "History"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{entry.tracability}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "e413773a-1961-4cc9-8d7a-717378c02eeb",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              } ], [ {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Molecular Formula"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "entry.molecularFormula"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "31bd1b96-fa82-4c3e-9abc-ba760bc6fd56",
+                "hasValidationError" : false,
+                "id" : "pbInput"
+              } ], [ {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Molecular weight"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "entry.relativeMolecularMass"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "77331f0a-dcb0-4b63-a5a1-3bc70183babf",
+                "hasValidationError" : false,
+                "id" : "pbInput"
+              } ], [ {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : ""
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "d89be52d-5054-4dd3-b3cd-bcc4bf7eed3b",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              } ] ]
+            } ] ]
+          },
+          "title" : "Details"
+        } ]
+      } ] ]
+    }
   } ] ],
   "assets" : [ {
     "id" : "ff010e10-1307-4d24-918e-763c8664d08e",
@@ -114,6 +563,30 @@
     "drugSubstance" : {
       "type" : "url",
       "value" : "../API/bdm/businessData/com.company.model.DrugSubstance?q=find&p=0&c=1000",
+      "exposed" : false
+    },
+    "entry" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "caseVisuURL" : {
+      "type" : "expression",
+      "value" : "    var process = $data.processDes[0];\n    \n    return \"/bonita/portal.js/#/admin/monitoring/\"+process.id+\"-\"+$data.caseId+\"?diagramOnly=1\";",
+      "exposed" : false
+    },
+    "caseId" : {
+      "type" : "urlparameter",
+      "value" : "id",
+      "exposed" : false
+    },
+    "processDes" : {
+      "type" : "url",
+      "value" : "/bonita/API/bpm/process?c=100&p=0&f=name=Notification&o=deploymentDate",
+      "exposed" : false
+    },
+    "overviewURL" : {
+      "type" : "expression",
+      "value" : "return \"http://localhost:8080/bonita/portal/resource/processInstance/Notification%20Summary%20Report/1.1/content/?id=\"+$data.caseId;",
       "exposed" : false
     }
   },

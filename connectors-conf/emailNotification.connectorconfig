@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="email" version="1.0.0" name="emailNotification" modelVersion="7.9.0-002">
+  <parameters key="smtpHost">
+    <expression xsi:type="expression:Expression" name="smtp.gmail.com" content="smtp.gmail.com" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="smtpPort">
+    <expression xsi:type="expression:Expression" name="465" content="465" returnType="java.lang.Integer" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="sslSupport">
+    <expression xsi:type="expression:Expression" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="starttlsSupport">
+    <expression xsi:type="expression:Expression" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="userName">
+    <expression xsi:type="expression:Expression" name="presales.webdemo@bonitasoft.com" content="presales.webdemo@bonitasoft.com" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="aehlo2014" content="aehlo2014" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="from">
+    <expression xsi:type="expression:Expression" name="NSR@project.com" content="NSR@project.com" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="to">
+    <expression xsi:type="expression:Expression" name="haris.subasic@bonitasoft.com" content="haris.subasic@bonitasoft.com" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="bcc">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="cc">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="subject">
+    <expression xsi:type="expression:Expression" name="You have a new NSR request pending" content="You have a new NSR request pending" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="html">
+    <expression xsi:type="expression:Expression" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="message">
+    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" content="&lt;html>&#xA;&lt;body>&#xA;&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>Hello,&lt;/P>&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>you have received a new project for evaluation. Please connect &lt;u>&lt;font  color = &quot;#0000ff&quot;>&lt;A href = &quot;http://localhost:8080/bonita/apps/notification/tasks/&quot;>here&lt;/A>&lt;/font>&lt;/u>.&lt;/P>&#xD;&#xA;&lt;P  style=&quot;margin: 4;&quot;align = &quot;left&quot;>Your Project team&lt;/P>&#xD;&#xA;&lt;/body>&lt;/html>&#xD;&#xA;" type="TYPE_PATTERN" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="headers">
+    <expression xsi:type="expression:TableExpression"/>
+  </parameters>
+  <parameters key="charset">
+    <expression xsi:type="expression:Expression" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="replyTo">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="attachments">
+    <expression xsi:type="expression:ListExpression"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

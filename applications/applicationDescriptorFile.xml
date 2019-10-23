@@ -5,10 +5,14 @@
         <applicationPages>
             <applicationPage customPage="custompage_Notification" token="11"/>
             <applicationPage customPage="custompage_Notification" token="123"/>
+            <applicationPage customPage="custompage_tasklist" token="tasks"/>
         </applicationPages>
         <applicationMenus>
             <applicationMenu applicationPage="123">
                 <displayName>Notification</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="tasks">
+                <displayName>Tasklist</displayName>
             </applicationMenu>
         </applicationMenus>
     </application>
