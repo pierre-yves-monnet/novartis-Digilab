@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_EyAqEOrGEemNk-t9I4zudQ" name="Notification" author="Pierre-Yves" bonitaVersion="7.9.0" bonitaModelVersion="7.9.0-002" configId="ACED000574001C4E6F74696669636174696F6E372E392E302D303032372E392E307370">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+  <process:MainProcess xmi:id="_EyAqEOrGEemNk-t9I4zudQ" name="Notification" author="Pierre-Yves" bonitaVersion="7.9.2" bonitaModelVersion="7.9.0-002" configId="ACED000574001C4E6F74696669636174696F6E372E392E302D303032372E392E327370">
     <elements xmi:type="process:Pool" xmi:id="_EyAqEerGEemNk-t9I4zudQ" name="Notification Summary Report">
       <elements xmi:type="process:Lane" xmi:id="_EyAqEurGEemNk-t9I4zudQ" name="Project Lead" actor="_EyAqK-rGEemNk-t9I4zudQ">
         <elements xmi:type="process:StartEvent" xmi:id="_EyAqE-rGEemNk-t9I4zudQ" name="Start1" outgoing="_EyAqKOrGEemNk-t9I4zudQ">
@@ -45,7 +45,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_g3OoV-rGEemNk-t9I4zudQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_g3OoVurGEemNk-t9I4zudQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_XLyL2erIEemNk-t9I4zudQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_XLyL2urIEemNk-t9I4zudQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_gX69kPsWEemhLftpUCBjcw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_XLyL2OrIEemNk-t9I4zudQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_XLyL2-rIEemNk-t9I4zudQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -165,6 +165,58 @@
       <actors xmi:type="process:Actor" xmi:id="_PbAXIOrIEemNk-t9I4zudQ" name="NKC"/>
       <actors xmi:type="process:Actor" xmi:id="_Qj1ncOrIEemNk-t9I4zudQ" name="PCS"/>
       <actors xmi:type="process:Actor" xmi:id="_Rt5m0OrIEemNk-t9I4zudQ" name="QA"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_bK7UQPsWEemhLftpUCBjcw" name="bonitaLocal" version="7.9.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_bK77UPsWEemhLftpUCBjcw">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_bK77UfsWEemhLftpUCBjcw" name="Project lead">
+            <groups xmi:type="actormapping:Groups" xmi:id="_bK77UvsWEemhLftpUCBjcw"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_bK77U_sWEemhLftpUCBjcw"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_bK77VPsWEemhLftpUCBjcw">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_bK77VfsWEemhLftpUCBjcw"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_bK77VvsWEemhLftpUCBjcw" name="Chemist">
+            <groups xmi:type="actormapping:Groups" xmi:id="_bK77V_sWEemhLftpUCBjcw"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_bK77WPsWEemhLftpUCBjcw"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_bK77WfsWEemhLftpUCBjcw">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_bK77WvsWEemhLftpUCBjcw"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_bK77W_sWEemhLftpUCBjcw" name="NKC">
+            <groups xmi:type="actormapping:Groups" xmi:id="_bK77XPsWEemhLftpUCBjcw"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_bK77XfsWEemhLftpUCBjcw"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_bK77XvsWEemhLftpUCBjcw">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_bK77X_sWEemhLftpUCBjcw"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_bK77YPsWEemhLftpUCBjcw" name="PCS">
+            <groups xmi:type="actormapping:Groups" xmi:id="_bK77YfsWEemhLftpUCBjcw"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_bK77YvsWEemhLftpUCBjcw"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_bK77Y_sWEemhLftpUCBjcw">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_bK77ZPsWEemhLftpUCBjcw"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_bK77ZfsWEemhLftpUCBjcw" name="QA">
+            <groups xmi:type="actormapping:Groups" xmi:id="_bK77ZvsWEemhLftpUCBjcw"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_bK77Z_sWEemhLftpUCBjcw"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_bK77aPsWEemhLftpUCBjcw">
+              <role>member</role>
+            </roles>
+            <users xmi:type="actormapping:Users" xmi:id="_bK77afsWEemhLftpUCBjcw"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bK7UQfsWEemhLftpUCBjcw" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bK7UQvsWEemhLftpUCBjcw" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bK7UQ_sWEemhLftpUCBjcw" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bK7URPsWEemhLftpUCBjcw" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bK7URfsWEemhLftpUCBjcw" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bK7URvsWEemhLftpUCBjcw" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bK7UR_sWEemhLftpUCBjcw" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bK7USPsWEemhLftpUCBjcw" id="OTHER"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_EyAqLOrGEemNk-t9I4zudQ"/>
       <documents xmi:type="process:Document" xmi:id="_SeNlQOrPEemNk-t9I4zudQ" name="chemDrawing">
         <mimeType xmi:type="expression:Expression" xmi:id="_SeNlQerPEemNk-t9I4zudQ" name="" content="" returnTypeFixed="true"/>

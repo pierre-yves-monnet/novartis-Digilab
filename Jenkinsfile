@@ -3,7 +3,8 @@
 //Global variable shared between nodes
 def props //Valuated during Deploy Server stage
 
-node('bcd-790') {
+lock('bcdBuildLock'){
+node('bcd-792') {
 
     def scenarioFile = "/home/bonita/bonita-continuous-delivery/scenarios/scenario-7.9.0-ec2.yml"
     def bonitaConfiguration = params.environment ?: "bonitaLocal"
@@ -85,4 +86,4 @@ node('bcd-790') {
   	} // timestamps
   } // ansiColor
 } // node
-
+} // lock
