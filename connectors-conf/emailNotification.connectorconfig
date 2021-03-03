@@ -16,7 +16,7 @@
     <expression xsi:type="expression:Expression" name="presales.webdemo@bonitasoft.com" content="presales.webdemo@bonitasoft.com" returnTypeFixed="true"/>
   </parameters>
   <parameters key="password">
-    <expression xsi:type="expression:Expression" name="aehlo2014" content="aehlo2014" returnTypeFixed="true"/>
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
   </parameters>
   <parameters key="from">
     <expression xsi:type="expression:Expression" name="NSR@project.com" content="NSR@project.com" returnTypeFixed="true"/>
